@@ -1,0 +1,39 @@
+@use 'styles/variables' as *;
+
+.section {
+	background-color: #292929;
+
+	.wrapper {
+		font-size: 1.6rem;
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap-reverse;
+		align-items: center;
+
+		@include md-screen {
+			margin: auto;
+			flex-direction: row;
+		}
+
+		.text {
+			max-width: 70rem;
+			margin: 0 auto;
+		}
+
+		.avatar {
+			flex-grow: 1;
+			display: flex;
+			margin-bottom: 2rem;
+
+			@include md-screen {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		p {
+			padding: 1rem 0;
+			text-align: left;
+		}
+	}
+}

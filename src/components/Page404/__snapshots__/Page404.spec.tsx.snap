@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page404 should render a Page404 correctly 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <h1>
+      404
+    </h1>
+    <p>
+      Página não encontrada!
+    </p>
+    <a
+      aria-label="voltar para página principal"
+      class="component large"
+      href="/"
+      target="_self"
+    >
+      <span
+        class="icon"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <span
+        class="text"
+      >
+        Voltar
+      </span>
+    </a>
+  </div>
+</div>
+`;

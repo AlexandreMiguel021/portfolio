@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should render a Icon correctly 1`] = `
+<div>
+  <a
+    class="icon"
+    href="/content"
+    target="_blank"
+  >
+    Content
+  </a>
+</div>
+`;

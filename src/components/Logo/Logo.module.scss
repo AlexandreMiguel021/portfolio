@@ -1,0 +1,27 @@
+@use 'styles/variables' as *;
+
+.logo {
+	font-size: $font-md;
+	font-weight: $bold;
+	background-image: $gradient;
+	background-clip: text;
+	color: transparent;
+	transition: all 0.3s ease;
+
+	@include md-screen {
+		font-size: $font-lg;
+	}
+
+	&::before {
+		content: '{';
+	}
+
+	&:hover {
+		transform: translateY(-4px);
+		transition: all 0.3s ease;
+	}
+
+	&::after {
+		content: '}';
+	}
+}

@@ -1,0 +1,56 @@
+@use 'styles/variables' as *;
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	flex-wrap: wrap;
+	height: 100vh;
+	word-break: break-all;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 10rem;
+		background: $gradient;
+		width: 100%;
+		bottom: 0;
+	}
+
+	h1 {
+		font-size: 7rem;
+		text-align: center;
+		color: $secondary;
+		letter-spacing: 0.1rem;
+		animation: bounce 1s infinite alternate;
+
+		@include md-screen {
+			font-size: 10rem;
+		}
+	}
+
+	p {
+		font-size: $font-sm;
+		margin-bottom: 4rem;
+
+		@include md-screen {
+			font-size: 3rem;
+		}
+
+		&::after {
+			content: ' :/';
+		}
+	}
+
+	@keyframes bounce {
+		from {
+			transform: translateY(0px);
+		}
+		to {
+			transform: translateY(-15px);
+		}
+	}
+}

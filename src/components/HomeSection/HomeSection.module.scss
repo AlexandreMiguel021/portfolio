@@ -1,0 +1,94 @@
+@use 'styles/variables' as *;
+
+.section {
+	background-image: $gradient-secondary;
+	width: 100%;
+	box-shadow: 0px 5px 5px rgb(24, 24, 24);
+
+	.wrapper {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+
+		.photo {
+			border: 0.2rem solid $secondary;
+			box-shadow: 1px 10px 20px rgb(24, 24, 24);
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			margin: 2rem auto;
+			max-width: 28rem;
+			background-image: $gradient;
+
+			img {
+				border-radius: 100%;
+			}
+
+			@include md-screen {
+				width: 30rem;
+			}
+		}
+
+		.introduction {
+			max-width: 70rem;
+
+			.name {
+				font-size: $font-xl;
+				font-weight: $bold;
+				padding-bottom: 0;
+
+				@include md-screen {
+					font-size: $font-xxl;
+				}
+
+				span {
+					background-image: $gradient;
+					background-clip: text;
+					color: transparent;
+					letter-spacing: 0.3rem;
+				}
+			}
+
+			.role {
+				font-size: $font-md;
+
+				@include md-screen {
+					font-size: $font-xl;
+				}
+			}
+
+			.info {
+				font-size: $font-xxs;
+				opacity: 0.9;
+				padding-bottom: 4rem;
+
+				@include md-screen {
+					font-size: $font-xs;
+				}
+			}
+
+			p {
+				font-size: $font-xs;
+				padding: 2rem 0;
+				font-weight: 300;
+
+				@include md-screen {
+					font-size: $font-sm;
+				}
+
+				a {
+					font-weight: $bold;
+					display: inline-block;
+					transition: all 0.3s ease;
+					text-decoration: underline;
+
+					&:hover {
+						transform: translateY(-2px);
+						transition: all 0.3s ease;
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}

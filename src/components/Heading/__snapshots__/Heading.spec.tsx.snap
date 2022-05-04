@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should render a Heading correctly 1`] = `
+<div>
+  <h2
+    class="heading"
+    data-aos="fade-up"
+  >
+    Content
+  </h2>
+</div>
+`;
