@@ -5,9 +5,9 @@ const useLoading = () => {
 
 	useEffect(() => {
 		setLoading(true)
-		setTimeout(() => {
+		window.onload = () => {
 			setLoading(false)
-		}, 800)
+		}
 	}, [])
 
 	return loading
