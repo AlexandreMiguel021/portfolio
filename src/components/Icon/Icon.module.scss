@@ -1,0 +1,23 @@
+@use 'styles/variables' as *;
+
+.icon {
+	font-size: 2.3rem;
+	color: $primary;
+	border: 0.2rem solid transparent;
+	display: inline-flex;
+	border: 2px solid transparent;
+	padding: 0.8rem;
+	background-color: $gray-900;
+	border-radius: 100%;
+	outline: 0.2rem solid transparent;
+	outline-offset: 0.2rem;
+	transition: all 0.2s ease;
+
+	&:hover {
+		transition: all 0.3s ease-in;
+		color: $secondary;
+		transform: scale(105%);
+		outline: 0.2rem solid $secondary;
+		outline-offset: 0.2rem;
+	}
+}

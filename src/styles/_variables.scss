@@ -1,0 +1,29 @@
+/*font styles*/
+$light: 300;
+$normal: 500;
+$bold: 600;
+$font-xxs: 1.4rem;
+$font-xs: 1.6rem;
+$font-sm: 1.8rem;
+$font-md: 2.2rem;
+$font-lg: 2.6rem;
+$font-xl: 3rem;
+$font-xxl: 4rem;
+
+/*border radius*/
+$radius: 0.3rem;
+
+/*colors*/
+$primary: #cbcbcb;
+$secondary: #1aa58e;
+$gray-900: #1f1f1f;
+$gray-600: #252525;
+$gradient: linear-gradient(95.08deg, #2bb7c7 2.49%, #119e5c 97.19%);
+$gradient-secondary: linear-gradient(-4deg, #03180d, #2e2e2e);
+
+/* responsive */
+@mixin md-screen {
+	@media (min-width: 768px) {
+		@content;
+	}
+}

@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render a Header correctly 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <div
+      class="wrapper"
+    >
+      <a
+        class="logo"
+        data-aos="flip-up"
+        href="/"
+      >
+        <span>
+          Alexandre
+        </span>
+      </a>
+      <nav
+        class="menu"
+      >
+        <ul
+          class="items"
+        >
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              data-aos="flip-up"
+              href="/#skills"
+            >
+              Habilidades
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              data-aos="flip-up"
+              href="/#about"
+            >
+              Sobre mim
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              data-aos="flip-up"
+              href="/#projects"
+            >
+              Projetos
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="link"
+              data-aos="flip-up"
+              href="/#contact"
+            >
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="menuIcon"
+        data-testid="menu"
+      >
+        <svg
+          aria-label="Abrir"
+          fill="currentColor"
+          height="1em"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div
+    class="spacer"
+  />
+</div>
+`;

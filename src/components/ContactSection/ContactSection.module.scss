@@ -1,0 +1,83 @@
+@use 'styles/variables' as *;
+
+.section {
+	background-color: rgb(41, 41, 41);
+
+	.avatar {
+		flex-grow: 1;
+		width: 20rem;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+
+		@include md-screen {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include md-screen {
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		.wrapperAddress {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 70rem;
+
+			@include md-screen {
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.wrapperIcons {
+				display: flex;
+				max-width: 15rem;
+				align-items: flex-start;
+				justify-content: flex-start;
+
+				span {
+					margin-right: 1.5rem;
+				}
+			}
+
+			address {
+				font-size: $font-xs;
+				font-style: normal;
+				text-align: left;
+				line-height: 2.7rem;
+
+				.group {
+					margin: 2rem 0;
+
+					a,
+					span {
+						display: inline-flex;
+						align-items: center;
+						transition: all 0.3s ease;
+						position: relative;
+						opacity: 0.8;
+						white-space: pre-wrap;
+						word-break: break-all;
+
+						svg {
+							font-size: 2rem;
+							margin-right: 1rem;
+							display: inline-flex;
+						}
+
+						&:hover {
+							opacity: 1;
+							color: $secondary;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should render a Logo correctly 1`] = `
+<div>
+  <a
+    class="logo"
+    data-aos="flip-up"
+    href="/"
+  >
+    <span>
+      Alexandre
+    </span>
+  </a>
+</div>
+`;

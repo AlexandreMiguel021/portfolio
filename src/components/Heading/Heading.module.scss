@@ -1,0 +1,17 @@
+@use 'styles/variables' as *;
+
+.heading {
+	font-size: $font-xl;
+	background-image: $gradient;
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 5rem;
+	width: 100%;
+
+	@include md-screen {
+		font-size: $font-xxl;
+	}
+}

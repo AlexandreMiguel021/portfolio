@@ -1,0 +1,38 @@
+@use 'styles/variables' as *;
+
+.footer {
+	background-color: $gray-900;
+	padding: 4rem 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.icon {
+			font-size: 2.5rem;
+			border: 2px solid $primary;
+			color: $primary;
+			background-color: $gray-600;
+			display: inline-flex;
+			padding: 0.8rem;
+			border-radius: 100%;
+			transition: all 0.3s ease;
+
+			&:hover {
+				transition: all 0.3s ease;
+				border: 2px solid $secondary;
+				color: $secondary;
+				transform: translateY(-20%);
+			}
+		}
+
+		p {
+			font-size: $font-xxs;
+		}
+	}
+}
