@@ -2,7 +2,7 @@
 
 .footer {
 	background-color: $gray-900;
-	padding: 4rem 0;
+	padding: 6rem 0;
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -13,6 +13,10 @@
 		align-items: center;
 		flex-wrap: wrap;
 
+		.active {
+			opacity: 1 !important;
+		}
+
 		.icon {
 			font-size: 2.5rem;
 			border: 2px solid $primary;
@@ -22,6 +26,13 @@
 			padding: 0.8rem;
 			border-radius: 100%;
 			transition: all 0.3s ease;
+			cursor: pointer;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			margin-right: 3rem;
+			margin-bottom: 3rem;
+			opacity: 0;
 
 			&:hover {
 				transition: all 0.3s ease;
@@ -32,7 +43,7 @@
 		}
 
 		p {
-			font-size: $font-xxs;
+			font-size: $font-xs;
 		}
 	}
 }

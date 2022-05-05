@@ -2,6 +2,7 @@
 
 .section {
 	background-color: rgb(41, 41, 41);
+	padding: 10rem 0;
 
 	.avatar {
 		flex-grow: 1;
@@ -32,7 +33,7 @@
 
 			@include md-screen {
 				flex-direction: column;
-				justify-content: center;
+				justify-content: start;
 			}
 
 			.wrapperIcons {

@@ -4,6 +4,7 @@ exports[`Header should render a Header correctly 1`] = `
 <div>
   <header
     class="header"
+    id="header"
   >
     <div
       class="wrapper"
@@ -28,7 +29,6 @@ exports[`Header should render a Header correctly 1`] = `
           >
             <a
               class="link"
-              data-aos="flip-up"
               href="/#skills"
             >
               Habilidades
@@ -39,7 +39,6 @@ exports[`Header should render a Header correctly 1`] = `
           >
             <a
               class="link"
-              data-aos="flip-up"
               href="/#about"
             >
               Sobre mim
@@ -50,7 +49,6 @@ exports[`Header should render a Header correctly 1`] = `
           >
             <a
               class="link"
-              data-aos="flip-up"
               href="/#projects"
             >
               Projetos
@@ -61,7 +59,6 @@ exports[`Header should render a Header correctly 1`] = `
           >
             <a
               class="link"
-              data-aos="flip-up"
               href="/#contact"
             >
               Contato

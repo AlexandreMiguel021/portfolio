@@ -81,20 +81,21 @@
 		margin: 0.5rem 0;
 	}
 
+	.active {
+		color: $secondary !important;
+	}
+
 	.link {
 		color: $primary;
 		margin: 0 1.6rem;
 		font-size: $font-xs;
 		position: relative;
 		padding: 0.3rem 0;
+		cursor: pointer;
 
 		@include md-screen {
 			font-size: $font-sm;
 			padding: 0.3rem 0;
-		}
-
-		&:active {
-			color: $secondary;
 		}
 
 		&::after {
