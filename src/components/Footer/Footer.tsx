@@ -19,7 +19,6 @@ const Footer: React.FC = () => {
 			<div className={S.wrapper}>
 				<p>&copy; 2022 Alexandre Miguel.</p>
 				<div
-					data-testid="backToTop"
 					aria-hidden={isVisible}
 					className={isVisible ? `${S.icon} ${S.active}` : S.icon}
 					title="Voltar para o topo do site"
