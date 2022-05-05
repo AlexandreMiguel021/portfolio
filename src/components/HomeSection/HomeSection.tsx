@@ -6,7 +6,7 @@ import S from './HomeSection.module.scss'
 import { Container } from 'components/Container'
 
 const HomeSection: React.FC = () => (
-	<section className={S.section} id="section">
+	<section className={S.section} id="home">
 		<Container>
 			<div data-aos="fade-up" className={S.wrapper}>
 				<div className={S.introduction}>

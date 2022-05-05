@@ -1,8 +1,9 @@
-import Link from 'next/link'
 import S from './Header.module.scss'
+
 import { useState } from 'react'
 import { Logo } from 'components/Logo'
 import { List, X } from 'react-bootstrap-icons'
+import Link from 'next/link'
 
 const menuItems = [
 	{
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
 
 	return (
 		<>
-			<header className={S.header}>
+			<header id="header" className={S.header}>
 				<div className={S.wrapper}>
 					<Logo />
 					<nav className={isOpen ? `${S.menu} ${S.active}` : S.menu}>
@@ -36,11 +37,7 @@ const Header: React.FC = () => {
 							{menuItems.map(({ title, href }) => (
 								<li className={S.item} key={title}>
 									<Link href={href}>
-										<a
-											onClick={() => setIsOpen(false)}
-											data-aos="flip-up"
-											className={S.link}
-										>
+										<a onClick={() => setIsOpen(false)} className={S.link}>
 											{title}
 										</a>
 									</Link>

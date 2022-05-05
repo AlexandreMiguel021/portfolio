@@ -7,10 +7,4 @@ describe('Footer', () => {
 		const { container } = render(<Footer />)
 		expect(container).toMatchSnapshot()
 	})
-
-	it('should render a button to return to the top of the page', () => {
-		const { container } = render(<Footer />)
-		expect(container.querySelector('a')).toBeInTheDocument()
-		expect(container.querySelector('a')).toHaveAttribute('href', '/')
-	})
 })

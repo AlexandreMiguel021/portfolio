@@ -11,9 +11,10 @@ exports[`Footer should render a Footer correctly 1`] = `
       <p>
         © 2022 Alexandre Miguel.
       </p>
-      <a
+      <div
+        aria-hidden="false"
         class="icon"
-        href="/"
+        data-testid="backToTop"
         title="Voltar para o topo do site"
       >
         <svg
@@ -28,7 +29,7 @@ exports[`Footer should render a Footer correctly 1`] = `
             fill-rule="evenodd"
           />
         </svg>
-      </a>
+      </div>
     </div>
   </footer>
 </div>
